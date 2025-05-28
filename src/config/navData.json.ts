@@ -18,33 +18,20 @@ const navConfig: navItem[] = [
 		link: "/",
 	},
 	{
+		text: "Sobre",
+		link: "/#about",
+	},
+	{
 		text: "portfolios",
 		link: "/portfolio/",
 	},
 	{
-		text: "Pricing",
-		link: "/#pricing",
+		text: "Contato",
+		link: "/#contact",
 	},
 	{
-		text: "Pages",
-		dropdown: [
-			{
-				text: "Portfolio",
-				link: "/portfolio/couple-1/",
-			},
-			{
-				text: "Legal",
-				link: "/privacy-policy/",
-			},
-			{
-				text: "Elements",
-				link: "/elements/",
-			},
-			{
-				text: "404",
-				link: "/not-a-link/",
-			},
-		],
+		text: "Orçamentos",
+		link: "/#pricing",
 	},
 ];
 

@@ -5,14 +5,15 @@ interface Props {
 	rest?: Partial<HTMLAnchorElement>; // catch-all for any additional parameters, such as "aria-label"
 }
 
-const { href, newTab = false, ...rest } = Astro.props as Props;
+const { href, newTab = true, ...rest } = Astro.props as Props;
 ---
 
+<!-- add this for opening up page in new tab -->
+<!-- target={newTab ? "_blank" : undefined} -->
+<!-- rel={newTab ? "noopener noreferrer" : undefined} -->
 <a
 	href={href}
 	class="nav__link--base"
-	target={newTab ? "_blank" : undefined}
-	rel={newTab ? "noopener noreferrer" : undefined}
 	{...rest}
 >
 	<slot />

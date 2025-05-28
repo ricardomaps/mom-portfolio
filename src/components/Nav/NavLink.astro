@@ -16,6 +16,7 @@ const { text, link, newTab = false } = navItem;
 	<a
 		class:list={[
 			`nav__link--base flex w-full items-center ${className}`,
+			"relative after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-full after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-center after:transition-transform after:duration-300",
 			{
 				// styling for current active page link
 				"": Astro.url.pathname === link,
