@@ -9,7 +9,7 @@ import { Image } from "astro:assets";
 interface pricingItem {
 	name: string; // plan name
 	featured?: boolean; // if true, will be highlighted or otherwise featured
-	price: number;
+	// price: number;
 	// features: string[]; // list of features
 	features: string;
 	image: ImageMetadata; // imported image
@@ -24,21 +24,21 @@ const pricingData: pricingItem[] = [
 	{
 		name: "Formaturas",
 		featured: false,
-		price: 0,
+		// price: 0,
 		features: "A cerimônia de formatura é um momento de celebração e reconhecimento — não apenas do esforço individual, mas de uma trajetória coletiva marcada por conquistas. Dou voz à emoção, conduzindo com fluidez cada etapa e garantindo a grandeza que essa ocasião merece.",
 		image: image1,
 	},
 	{
 		name: "Casamentos",
 		featured: true,
-		price: 0,
+		// price: 0,
 		features: "Com sensibilidade, presença e uma comunicação acolhedora, conduzo cerimônias de casamento que refletem a essência do casal — únicas, leves e inesquecíveis.Celebre o amor com uma cerimônia feita para emocionar.",
 		image: image2,
 	},
 	{
 		name: "Debutantes",
 		featured: false,
-		price: 0,
+		// price: 0,
 		features: "Mais do que uma festa, o baile de debutante é um momento de sonho e transformação — e cada detalhe merece ser vivido com emoção. Minha missão é valorizar a trajetória, dar voz às homenagens e tornar cada entrada, cada palavra e cada sorriso parte de uma noite verdadeiramente inesquecível.",
 		image: image3,
 	},
@@ -75,9 +75,9 @@ const pricingData: pricingItem[] = [
 							/>
 						</div>
 					</div>
-					<div class="border-primary-200 flex h-full flex-col justify-between border-2 border-t-0 pt-10 pb-10">
+					<div class="border-primary-200 flex h-full flex-col justify-between border-2 border-t-0 pt-10 pb-10 px-10">
 						<div>
-							<h3 class="h2 text-center">{plan.name}</h3>
+							<h3 class="h3 text-center mb-4">{plan.name}</h3>
 
 							{/* <ul class="mt-4 flex flex-col gap-3 px-8">
 								{plan.features.map((feature) => (
@@ -86,10 +86,10 @@ const pricingData: pricingItem[] = [
 							</ul> */}
 							<p>{plan.features}</p>
 						</div>
-						<p class="font-decorative text-base-800 mt-6 flex justify-center text-center text-[5rem] leading-none">
+						{/* <p class="font-decorative text-base-800 mt-6 flex justify-center text-center text-[5rem] leading-none">
 							${plan.price}
 							<span class="flex h-full text-[3.5rem]">+</span>
-						</p>
+						</p> */}
 					</div>
 				</div>
 			))
